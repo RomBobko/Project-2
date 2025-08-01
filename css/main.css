@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: teal;
+    color: var(--primary-text-color);
     margin: 0;
     padding: 0;
 }
@@ -54,10 +54,10 @@ section {
 }
 
 .section-title {
+    padding-top: 115px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
     text-align: center;
-    padding-top: 165px;
-    margin-bottom: 40px;
-
     color: var(--primary-text-color);
     font-size: 40px;
     font-weight: 700;
@@ -123,7 +123,7 @@ section {
     width: 143px;
     height: 48px;
 
-    border: 1px solid #050B20;
+    border: 1px solid var(--primary-text-color);
     border-radius: 16px;
 }
 
@@ -173,6 +173,11 @@ section {
 .type-section {
     outline: 1px solid teal;
     margin-bottom: 100px;
+}
+
+.section-title.type {
+    padding-top: 165px;
+    margin-bottom: 40px;
 }
 
 .container.is-hidden {
@@ -276,10 +281,8 @@ section {
 
 /* searched-section */
 
-.section-title.searched {
-    padding-top: 115px;
-    padding-bottom: 25px;
-    margin-bottom: 15px;
+.searched-section {
+    margin-bottom: 105px;
 }
 
 .searched-list {
@@ -418,3 +421,202 @@ section {
     font-weight: 700;
     line-height: 1.5;
 }
+
+.searched-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.flash-button {
+
+    width: 60px;
+    height: 40px;
+
+    border: 1px solid #E9E9E9;
+    border-radius: 30px;
+
+}
+
+/* reason-section */
+.reason-section {
+    max-width: 1800px;
+
+    padding: 115px 200px;
+    /* background-color: #F9FBFC; */
+    background-color:#ccc;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.section-title.reason {
+    padding: 0;
+    margin-bottom: 45px;
+}
+
+.reason-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 46px;
+}
+
+.reason-item {
+    text-align: left;
+}
+
+.reason-title {
+    font-size: 20px;
+    line-height: 1.2;
+
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.reason-text {
+    font-weight: 400;
+}
+
+
+/* latest-section */
+
+.latest-section {
+    margin-bottom: 100px;
+}
+
+.section-title.latest {
+    padding-top: 115px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+
+/* inspiration-section */
+
+.inspiration-section {
+    margin-bottom: 115px;
+}
+
+.section-title.inspiration {
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+.inspiration-list {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.inspiration-item a {
+    display: inline-block;
+
+    padding: 22px 26px;
+
+    background-color: var(--white-color);
+    border: 1px solid #E1E1E1;
+    border-radius: 16px;
+
+    color: var(--primary-text-color);
+    font-style: 16px;
+    line-height: 1;
+}
+
+
+
+/* .rewiews-section */
+
+.rewiews-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1700px;
+    min-height: 437.5px;
+    padding: 105px 150px;
+
+    background-color: rgba(64, 95, 242, 1);
+    border-radius: 16px;
+}
+
+.section-title.rewiew {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 19px;
+
+    color: var(--white-color);
+}
+.rewiew-text {
+    display: inline-block;
+
+    max-width: 295px;
+    color: var(--white-color);
+}
+
+.rewiew-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 0 15px;
+}
+
+.rewiew-item img {
+    display: block;
+}
+
+
+/* team-section */
+.team-list {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    border-radius: 16px;
+}
+
+.team-item {
+    position: relative;
+    overflow: hidden;
+
+    /* width: 256px; */
+    border-radius: 16px;
+}
+
+.team-item img{
+    display: block;
+}
+
+.team-info {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.team-name {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.team-proffesion {
+    font-size: 14px;
+    font-weight: 400;
+}
+

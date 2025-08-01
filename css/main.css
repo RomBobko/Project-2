@@ -110,6 +110,20 @@ section {
     padding: 9px 0px;
 }
 
+.arrow-down::after {
+    content: "";
+    display: inline-block;
+    margin-left: 8px;
+
+    width: 0px;
+    height: 0px;
+    vertical-align: middle;
+
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #050B20;
+}
+
 .sign-in {
     background-color: tomato;
     padding-right: 370px;
@@ -620,3 +634,116 @@ section {
     font-weight: 400;
 }
 
+
+/* post-section */
+.post-section {
+    margin-bottom: 75px;
+}
+
+.post-list {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+    padding-bottom: 30px;
+
+
+    background-color: #fff;
+}
+
+.post-top {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 447px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+}
+
+.post-top img {
+    display: block;
+}
+
+.post-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    padding: 5px 15px;
+
+    background-color: var(--white-color);
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.post-bottom {
+    display: flex;
+}
+
+.post-text,
+.post-date {
+    font-weight: 400;
+}
+
+.post-text::after {
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 13px;
+
+    width: 4px;
+    height: 4px;
+
+    background-color: #E1E1E1;
+    border-radius: 2px;
+
+    align-items: center;
+    vertical-align: middle;
+}
+
+.post-title {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+
+/* brand-section */
+
+.brand-section {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1700px;
+    padding: 80px 150px;
+    margin-bottom: 60px;
+
+    background-color: #F9FBFC;
+    border-radius: 16px;
+}
+
+.brand-box {
+    width: 542px;
+}
+
+.brand-title {
+    margin-top: 133px;
+    margin-bottom: 19px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.brand-text {
+    margin-bottom: 21px;
+}
+
+.brand-button {
+    display: inline-block;
+    padding: 19px 26px;
+    color: var(--white-color);
+    border-radius: 12px;
+    border: 1px solid #405FF2;
+    background: #405FF2;
+    line-height: 1;
+}
